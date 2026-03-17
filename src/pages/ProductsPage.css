@@ -1,0 +1,95 @@
+/* ── Products Page ──────────────────────────────────────── */
+.products-filters-bar {
+  background: var(--clr-surface);
+  border-bottom: 1px solid var(--clr-border-light);
+  padding: var(--sp-4) 0;
+  position: sticky;
+  top: var(--nav-height);
+  z-index: var(--z-raised);
+  box-shadow: var(--shadow-sm);
+}
+.filters-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+
+/* Search */
+.filter-search {
+  position: relative;
+  flex: 1;
+  min-width: 180px;
+}
+.filter-search__icon {
+  position: absolute;
+  left: var(--sp-3);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--text-base);
+  pointer-events: none;
+}
+.filter-search__input {
+  padding-left: 2.5rem;
+  height: 44px;
+}
+
+.filter-group { flex-shrink: 0; }
+.filter-select {
+  height: 44px;
+  min-width: 150px;
+  padding-right: 2.2rem;
+}
+
+/* ── Category Tabs ── */
+.products-cats-bar {
+  background: var(--clr-bg-alt);
+  border-bottom: 1px solid var(--clr-border-light);
+  padding: var(--sp-4) 0;
+  overflow-x: auto;
+}
+.cats-tabs {
+  display: flex;
+  gap: var(--sp-2);
+  white-space: nowrap;
+  padding-bottom: var(--sp-1);
+}
+.cats-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-5);
+  border-radius: var(--r-full);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--clr-text-mid);
+  background: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--t-fast);
+  white-space: nowrap;
+}
+.cats-tab:hover {
+  background: rgba(61,32,14,0.08);
+  color: var(--clr-primary);
+}
+.cats-tab.active {
+  background: var(--clr-primary);
+  color: #fff;
+  border-color: var(--clr-primary);
+}
+
+/* ── Main grid ── */
+.products-main {
+  padding: var(--sp-10) 0 var(--sp-20);
+  background: var(--clr-bg);
+}
+.products-meta {
+  margin-bottom: var(--sp-6);
+}
+.products-count {
+  font-size: var(--text-sm);
+  color: var(--clr-text-muted);
+}
+.products-count strong { color: var(--clr-primary); }
+.products-count em     { font-style: normal; font-weight: 700; color: var(--clr-primary-mid); }

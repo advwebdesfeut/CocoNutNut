@@ -1,0 +1,90 @@
+/* ── Register-specific additions ─── append to AuthPages.css ── */
+
+/* Progress stepper */
+.reg-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: var(--sp-6);
+}
+.reg-progress::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  height: 2px;
+  background: var(--clr-border);
+  z-index: 0;
+}
+.reg-progress__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  z-index: 1;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--clr-text-muted);
+  flex: 1;
+}
+.reg-progress__step.active { color: var(--clr-primary); }
+.reg-progress__dot {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--clr-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-xs);
+  font-weight: 800;
+  color: var(--clr-text-muted);
+  transition: all var(--t-base);
+}
+.reg-progress__step.active .reg-progress__dot {
+  background: var(--clr-primary);
+  color: #fff;
+}
+
+/* Step content */
+.step-content { display: flex; flex-direction: column; gap: var(--sp-4); }
+
+/* Nav buttons row */
+.reg-nav-btns {
+  display: flex;
+  gap: var(--sp-4);
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: var(--sp-4);
+}
+.reg-nav-btns .btn-outline {
+  flex-shrink: 0;
+}
+
+/* Review cards */
+.review-card {
+  background: var(--clr-bg-alt);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5);
+  border: 1px solid var(--clr-border-light);
+}
+.review-card h4 {
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--clr-primary);
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--clr-border-light);
+}
+.review-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--sp-2) var(--sp-4);
+  font-size: var(--text-sm);
+}
+.review-label {
+  font-weight: 700;
+  color: var(--clr-text-muted);
+}
