@@ -1,4 +1,3 @@
-// CocoFiber PH – Brand Logo SVG Component
 export default function CocoLogo({ size = 40, className = '' }) {
   return (
     <svg

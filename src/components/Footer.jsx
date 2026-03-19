@@ -73,7 +73,7 @@ export default function Footer() {
               <ul>
                 <li className="footer__contact-item">
                   <span aria-hidden="true">📍</span>
-                  <span>123 Coco Lane, Quezon City, Metro Manila, Philippines</span>
+                  <span>123 Tomas Morato, Quezon City, Metro Manila, Philippines</span>
                 </li>
                 <li className="footer__contact-item">
                   <span aria-hidden="true">📞</span>
@@ -85,7 +85,7 @@ export default function Footer() {
                 </li>
                 <li className="footer__contact-item">
                   <span aria-hidden="true">🕗</span>
-                  <span>Mon–Sat, 8:00 AM – 6:00 PM</span>
+                  <span>Mon–Sat, 8:00 AM – 5:00 PM</span>
                 </li>
               </ul>
             </address>
@@ -106,7 +106,7 @@ export default function Footer() {
             </p>
           </div>
           <p className="footer__group">
-            A project by <strong>CocoNutNut PH Development Group</strong> &nbsp;|&nbsp;
+            A project by <strong>CocoNutNut PH Group</strong> &nbsp;|&nbsp;
             <CocoLogo size={18} style={{ display: 'inline', verticalAlign: 'middle' }} />
           </p>
         </div>
