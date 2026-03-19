@@ -1,6 +1,4 @@
-// ============================================================
-//  CocoFiber PH — Product & Location Data
-// ============================================================
+const BASE = import.meta.env.BASE_URL;
 
 export const products = [
   {
@@ -12,7 +10,7 @@ export const products = [
     category: "home",
     description:
       "Thick, durable natural coconut coir doormat with non-slip rubber backing. Ideal for entryways and patios. Naturally anti-bacterial and eco-friendly.",
-    image: "/images/doormat.webp",
+    image: `${BASE}images/doormat.webp`,
     badge: "bestseller",
     stock: 45,
     rating: 4.8,
@@ -28,7 +26,7 @@ export const products = [
     category: "garden",
     description:
       "Twisted natural coconut coir rope — strong, biodegradable, and versatile. Perfect for garden trellises, craft projects, and bundling.",
-    image: "/images/rope.jpg",
+    image: `${BASE}images/rope.jpg`,
     badge: "new",
     stock: 80,
     rating: 4.6,
