@@ -70,9 +70,14 @@ export default function StorefrontPage() {
           <p  className="sf-hero__tag">{slide.tag}</p>
           <h1 className="sf-hero__title" key={slide.id}>{slide.title}</h1>
           <p  className="sf-hero__sub">{slide.sub}</p>
-          <a  href={`#section-${slide.filter}`} className="btn btn-accent btn-lg">
+          <button
+            className="btn btn-accent btn-lg"
+            onClick={() => {
+               document.getElementById(`section-${slide.filter}`)?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             {slide.cta}
-          </a>
+          </button>
         </div>
 
         {/* Slide indicators */}
