@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AppProvider, useApp }   from './context/AppContext';
 import Navbar                    from './components/Navbar';
 import Footer                    from './components/Footer';
@@ -45,10 +45,10 @@ function AppShell() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppProvider>
         <AppShell />
       </AppProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
