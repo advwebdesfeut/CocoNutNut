@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://JiroLeceta.github.io/jiroleceta-projects",
+  "homepage": "https://advwebdesfeut.github.io/CocoNutNut",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
