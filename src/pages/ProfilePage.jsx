@@ -80,7 +80,7 @@ export default function ProfilePage() {
           <h1 className="page-hero__title">My Profile</h1>
           <p className="page-hero__subtitle">Manage your account information</p>
           <nav className="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
             <span className="sep">›</span>
             <span className="current" aria-current="page">My Profile</span>
           </nav>

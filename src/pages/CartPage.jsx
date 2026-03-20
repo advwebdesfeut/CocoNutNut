@@ -33,9 +33,9 @@ export default function CartPage() {
               : `${cartItems.length} item${cartItems.length > 1 ? 's' : ''} in your cart`}
           </p>
           <nav className="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
             <span className="sep">›</span>
-            <a href="/products">Products</a>
+            <Link to="/products">Products</Link>
             <span className="sep">›</span>
             <span className="current" aria-current="page">Cart</span>
           </nav>

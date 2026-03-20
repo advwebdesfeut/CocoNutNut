@@ -35,9 +35,9 @@ export default function TransactionHistoryPage() {
             Track and review all your past transactions.
           </p>
           <nav className="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
             <span className="sep">›</span>
-            <a href="/profile">My Account</a>
+            <Link to="/profile">My Account</Link>
             <span className="sep">›</span>
             <span className="current" aria-current="page">Order History</span>
           </nav>

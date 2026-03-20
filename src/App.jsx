@@ -3,6 +3,7 @@ import { AppProvider, useApp }   from './context/AppContext';
 import Navbar                    from './components/Navbar';
 import Footer                    from './components/Footer';
 import ToastContainer            from './components/ToastContainer';
+import ScrollToTop               from './components/ScrollToTop';
 import HomePage                  from './pages/HomePage';
 import LoginPage                 from './pages/LoginPage';
 import RegisterPage              from './pages/RegisterPage';
@@ -22,6 +23,7 @@ function PrivateRoute({ children }) {
 function AppShell() {
   return (
     <div className="page-wrapper">
+      <ScrollToTop />
       <Navbar />
       <main className="page-content" id="main-content">
         <Routes>

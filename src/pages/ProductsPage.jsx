@@ -82,7 +82,7 @@ export default function ProductsPage() {
             Browse our complete collection of eco-friendly coconut coir products.
           </p>
           <nav className="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
             <span className="sep" aria-hidden="true">›</span>
             <span className="current" aria-current="page">Products</span>
           </nav>

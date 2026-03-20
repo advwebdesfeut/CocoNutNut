@@ -106,9 +106,9 @@ export default function CheckoutPage() {
           <h1 className="page-hero__title">Checkout</h1>
           <p className="page-hero__subtitle">Complete your order</p>
           <nav className="breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
             <span className="sep">›</span>
-            <a href="/cart">Cart</a>
+            <Link to="/cart">Cart</Link>
             <span className="sep">›</span>
             <span className="current" aria-current="page">Checkout</span>
           </nav>
